@@ -1,0 +1,14 @@
+{
+	"token": "put your token here",
+
+	"compile": {
+		"classes": "src/classes",
+		"assets": "src/assets",
+		"data": "src/data"
+	},
+
+	"build": [
+		"src/commands",
+		"src/events"
+	]
+}
