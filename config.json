@@ -1,5 +1,6 @@
 {
 	"token": "put your token here",
+	"intents": 33283,
 	"prefix": "?",
 
 	"compile": {
