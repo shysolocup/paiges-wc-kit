@@ -3,6 +3,7 @@ const bot = new Client({ intents: 33283 });
 const { PSClient } = require('psc');
 const psc = new PSClient({ client: bot, prefix: "." });
 
+const { Soup } = require('stews');
 
 const config = require('./config.json');
 
@@ -12,14 +13,21 @@ bot.on('ready', async () => {
 });
 
 
-let classes = psc.compile("src/classes");
-let assets = psc.compile("src/assets");
-let data = psc.compile("src/data");
+let compiles = Soup.from(config.compile);
+
+compiles = compiles.map( (call, dir) => {
+	return psc.compile(dir);
+});
 
 
-module.exports = { psc, bot, classes, assets, data };
-psc.build("src/commands");
-psc.build("src/events");
+let stuff = Soup.from({ psc, bot });
+let exp = stuff.merge(compiles);
+
+
+module.exports = exp;
+config.build.forEach( (dir) => {
+	psc.build(dir);
+});
 
 
 bot.login(config.token);
