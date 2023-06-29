@@ -2,7 +2,7 @@
     "name": "paiges-psc-kit",
     "version": "1.0.0",
     "author": "nutmeg",
-    "description": "a small bot kit using PSC and stews that automatically builds commands and compiles classes for you",
+    "description": "a small discord bot kit using PSC and stews that automatically builds commands and compiles classes for you",
     "repository": {
         "type": "git",
         "url": "https://github.com/nuttmegg/paiges-psc-kit.git"
