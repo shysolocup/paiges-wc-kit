@@ -1,7 +1,7 @@
 const config = require('./config.json');
 
 const { Client } = require('discord.js');
-const bot = new Client({ intents: 33283 });
+const bot = new Client({ intents: config.intents });
 const { PSClient } = require('psc');
 const psc = new PSClient({ client: bot, prefix: config.prefix });
 
