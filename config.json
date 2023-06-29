@@ -1,5 +1,6 @@
 {
 	"token": "put your token here",
+	"prefix": "?",
 
 	"compile": {
 		"classes": "src/classes",
