@@ -1,22 +1,22 @@
 {
-    "name": "paiges-psc-kit",
-    "version": "1.0.0",
+    "name": "paiges-wc-kit",
+    "version": "1.1.0",
     "author": "paigeroid",
-    "description": "a small discord bot kit using PSC and stews that automatically builds commands and compiles classes for you",
+    "description": "a small discord bot kit using WillClient and stews that automatically builds commands and compiles classes for you",
     "repository": {
         "type": "git",
-        "url": "https://github.com/nuttmegg/paiges-psc-kit.git"
+        "url": "https://github.com/nuttmegg/paiges-wc-kit.git"
     },
     "bugs": {
-        "url": "https://github.com/nuttmegg/paiges-psc-kit/issues"
+        "url": "https://github.com/nuttmegg/paiges-wc-kit/issues"
     },
     "license": {
         "type": "MIT",
-        "url": "https://github.com/nuttmegg/paiges-psc-kit/blob/main/LICENSE"
+        "url": "https://github.com/nuttmegg/paiges-wc-kit/blob/main/LICENSE"
     },
     "dependencies": {
         "discord.js": "latest",
-        "github:nuttmegg/psc": "latest",
+        "willclient": "latest",
         "stews": "latest",
     },
     "main": "index.js"
