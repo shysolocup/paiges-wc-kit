@@ -12,5 +12,9 @@
 	"build": [
 		"src/commands",
 		"src/events"
-	]
+	],
+
+	"plugins": {
+		"": "src/plugins/"
+	}
 }
