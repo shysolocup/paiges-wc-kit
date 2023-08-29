@@ -2,8 +2,8 @@ const config = require('./config.json');
 
 const { Client } = require('discord.js');
 const bot = new Client({ intents: config.intents });
-const { WillClient } = require('willclient');
-const wc = new WillClient({ client: bot, prefix: config.prefix });
+const { WillClient } = require('./src/test');
+const wc = new WillClient({ client: bot, prefix: config.prefix, token: config.token });
 
 const { Soup } = require('stews');
 
@@ -27,4 +27,4 @@ config.build.forEach( (dir) => {
 });
 	
 
-bot.login(config.token);
+client.login(config.token);
