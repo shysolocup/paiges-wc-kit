@@ -27,4 +27,4 @@ config.build.forEach( (dir) => {
 });
 	
 
-client.login(config.token);
+bot.login(config.token);
