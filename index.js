@@ -17,6 +17,7 @@ let stuff = Soup.from({ wc, bot });
 let exp = stuff.merge(compiles);
 
 module.exports = exp;
+
 if (config.plugins && Soup.from(config.plugins).length > 0) {
 	Soup.from(config.plugins).forEach( (call, dir) => {
 		wc.addon(call, dir);
@@ -25,6 +26,5 @@ if (config.plugins && Soup.from(config.plugins).length > 0) {
 config.build.forEach( (dir) => {
 	wc.build(dir);
 });
-	
 
-bot.login(config.token);
+bot.login(config.token)
