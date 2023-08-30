@@ -33,4 +33,4 @@ let options = [{
     type: "user"
 }];
 
-wc.slashCommand({ name: "avatar", desc cooldown: "5s" }, action);
+wc.slashCommand({ name: "avatar", desc: "Sends an avatar", cooldown: "5s" }, action);
