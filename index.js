@@ -8,23 +8,23 @@ const wc = new WillClient({ client: bot, prefix: config.prefix, token: config.to
 const { Soup } = require('stews');
 
 let compiles = Soup.from(config.compile);
-
 compiles = compiles.map( (call, dir) => {
-	return wc.compile(call, dir);
+	return wc.compile(dir);
 });
 
 let stuff = Soup.from({ wc, bot });
 let exp = stuff.merge(compiles);
 
 module.exports = exp;
-
 if (config.plugins && Soup.from(config.plugins).length > 0) {
 	Soup.from(config.plugins).forEach( (call, dir) => {
 		wc.addon(call, dir);
 	});
 }
+
 config.build.forEach( (dir) => {
 	wc.build(dir);
 });
 
-bot.login(config.token)
+
+bot.login(config.token);
