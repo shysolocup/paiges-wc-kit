@@ -10,7 +10,8 @@
 	},
 
 	"build": [
-		"src/commands",
+		"src/commands/slash",
+		"src/commands/prefix",
 		"src/events"
 	]
 }
