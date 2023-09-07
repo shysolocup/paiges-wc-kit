@@ -1,4 +1,4 @@
-var { wc, bot } = require('../../index.js');
+var { wc, bot } = require('../../../index.js');
 
 async function action(ctx, cmd) {
 	if (cmd.onCooldown) {
