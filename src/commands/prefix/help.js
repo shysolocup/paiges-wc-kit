@@ -1,4 +1,4 @@
-var { wc, bot, assets } = require('../../index.js');
+var { wc, bot, assets } = require('../../../index.js');
 var { link } = assets;
 
 async function action(ctx, cmd) {
