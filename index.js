@@ -1,5 +1,5 @@
 /*
-	:: Paige's WillClient Kit :: Version 1.1.1 | 09/09/23 ::
+	:: Paige's WillClient Kit :: Version 1.2.0 | 09/09/23 ::
 	https://github.com/paigeroid/paiges-wc-kit
 
 */
